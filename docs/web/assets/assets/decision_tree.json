@@ -1,0 +1,696 @@
+{
+  "start": {
+    "description": "A mysterious pandemic has emerged. What is your first action?",
+    "choices": {
+      "Deploy emergency health teams": "nodeA",
+      "Announce a public lockdown": "nodeB"
+    }
+  },
+  "nodeA": {
+    "description": "Emergency health teams are mobilized. Do you prioritize green or red countries?",
+    "choices": {
+      "Focus on red countries": "nodeC",
+      "Send teams to green countries": "nodeD"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": 2,
+      "redresources": 2,
+      "greenEconomy": 20,
+      "redEconomy": 20
+    }
+  },
+  "nodeB": {
+    "description": "A lockdown is announced. Do you enforce it with strict fines or rely on public cooperation?",
+    "choices": {
+      "Enforce fines": "nodeE",
+      "Promote public cooperation": "nodeF"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": 2,
+      "redresources": 2,
+      "greenEconomy": -10,
+      "redEconomy": -10
+    }
+  },
+  "nodeC": {
+    "description": "Would you like to distribute vaccines to the red country?",
+    "choices": {
+      "Send vaccines to red country": "nodeG",
+      "Distribute vaccines evenly": "nodeH"
+    },
+    "actions": {
+      "population": 0,
+      "greenresources": 2,
+      "redresources": -5,
+      "greenEconomy": -10,
+      "redEconomy": 10
+    }
+  },
+  "nodeD": {
+    "description": "Green country is recovering, but outbreaks still worsen. How do you proceed?",
+    "choices": {
+      "Send more resources to the red country": "nodeI",
+      "Focus on vaccine research in green zone": "nodeJ"
+    },
+    "actions": {
+      "population": 20,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeE": {
+    "description": "Strict fines deter movement but create unrest. Do you focus resources on red or green country?",
+    "choices": {
+      "Prioritize red country": "nodeK",
+      "Prioritize green country": "nodeL"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": -2,
+      "greenresources": -2,
+      "greenEconomy": -10,
+      "redEconomy": -20
+    }
+  },
+  "nodeF": {
+    "description": "Public cooperation is slow. Do you initiate an awareness campaign or distribute masks?",
+    "choices": {
+      "Start an awareness campaign": "nodeM",
+      "Distribute protective masks": "nodeN"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeG": {
+    "description": "The red country healthcare drive improves recovery rates. How do you sustain it?",
+    "choices": {
+      "Recruit more local medics in red country": "nodeO",
+      "Shift resources to green country": "nodeP"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 0,
+      "greenEconomy": 0,
+      "redEconomy": 20
+    }
+  },
+  "nodeH": {
+    "description": "Resources are spread thin. Do you request international aid?",
+    "choices": {
+      "Yes, request aid": "nodeQ",
+      "No, tighten resource management": "nodeR"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": -10,
+      "redEconomy": -10
+    }
+  },
+  "nodeI": {
+    "description": "Green country needs additional medical supplies. Do you provide these or focus on vaccines?",
+    "choices": {
+      "Send medical supplies": "nodeS",
+      "Focus on vaccine production": "nodeT"
+    },
+    "actions": {
+      "population": 20,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": -10
+    }
+  },
+  "nodeJ": {
+    "description": "Vaccine research progresses slowly. Do you allocate more resources to red country or green country?",
+    "choices": {
+      "Focus on red country": "nodeU",
+      "Focus on green country": "nodeV"
+    },
+    "actions": {
+      "population": 5,
+      "greenresources": 2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 0
+    }
+  },
+  "nodeK": {
+    "description": "Red country receives additional food and medical aid. What’s your next action?",
+    "choices": {
+      "Support vaccine efforts in green country": "nodeW",
+      "Focus on recovery efforts in red country": "nodeX"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": -2,
+      "redresources": -2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeL": {
+    "description": "Green country begins recovery. Do you expand testing in green or red country?",
+    "choices": {
+      "Expand testing in green country": "nodeY",
+      "Expand testing in red country": "nodeYZ"
+    },
+    "actions": {
+      "population": 15,
+      "greenresources": -2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeM": {
+    "description": "Awareness campaigns slowly change public behavior. What is your next move?",
+    "choices": {
+      "Focus on testing in red country": "nodeAA",
+      "Focus on vaccine production in green country": "nodeBB"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": 0,
+      "redresources": 0,
+      "greenEconomy": 0,
+      "redEconomy": 0
+    }
+  },
+  "nodeN": {
+    "description": "Masks reduce the spread significantly. Do you mandate mask-wearing in red or green country?",
+    "choices": {
+      "Mandate masks in red country": "nodeCC",
+      "Mandate masks in green country": "nodeDD"
+    },
+    "actions": {
+      "population": 20,
+      "greenresources": 2,
+      "redresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeO": {
+    "description": "Red country medics need training. Do you fund additional training or shift resources?",
+    "choices": {
+      "Fund training in red country": "nodeEE",
+      "Shift resources to green country": "nodeFF"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 0,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeP": {
+    "description": "Green country stabilizes. Do you prioritize building a long-term healthcare system?",
+    "choices": {
+      "Yes, build healthcare infrastructure": "nodeGG",
+      "No, allocate resources to red country": "nodeHH"
+    },
+    "actions": {
+      "population": 5,
+      "greenresources": 2,
+      "redresources": -2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeQ": {
+    "description": "Aid has arrived. How do you distribute resources?",
+    "choices": {
+      "Focus aid on green country": "nodeII",
+      "Distribute equally between both countries": "nodeJJ"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeR": {
+    "description": "Resource management is stabilized. How do you use surplus resources?",
+    "choices": {
+      "Increase testing in red country": "nodeKK",
+      "Focus on recovery in green country": "nodeLL"
+    },
+    "actions": {
+      "population": 5,
+      "greenresources": 2,
+      "redresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeS": {
+    "description": "Green country struggles with recovery. Do you allocate additional funds?",
+    "choices": {
+      "Yes, increase funding": "nodeMM",
+      "No, focus on vaccine production": "nodeNN"
+    },
+    "actions": {
+      "population": 20,
+      "greenresources": 2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeT": {
+    "description": "Vaccine production in the green country slows down because a worker accidentally used vaccine vials as flower pots. What’s your solution?",
+    "choices": {
+      "Encourage hydroponic farming in the lab": "nodeTO",
+      "Order strict lab discipline": "nodeTP"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": -2,
+      "redresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeU": {
+    "description": "Red country is recovering but demands more ice cream during quarantine. How do you handle this?",
+    "choices": {
+      "Set up an ice cream factory": "nodeUQ",
+      "Offer healthy alternatives like smoothies": "nodeUR"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -5,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeV": {
+    "description": "Green country is thriving, but local TV channels air rumors about alien vaccines. How do you respond?",
+    "choices": {
+      "Launch a science education campaign": "nodeVS",
+      "Ban alien vaccine rumors": "nodeVT"
+    },
+    "actions": {
+      "population": 5,
+      "greenresources": -2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeW": {
+    "description": "green country reports recovery, but citizens demand free spa treatments to relax. What’s your move?",
+    "choices": {
+      "Fund free spa services": "nodeWU",
+      "Encourage yoga classes instead": "nodeWV"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": 20,
+      "redEconomy": -10
+    }
+  },
+  "nodeX": {
+    "description": "Green country struggles with vaccine delivery due to a nationwide paper shortage. What’s your solution?",
+    "choices": {
+      "Switch to digital vaccine certificates": "nodeWX",
+      "Send a truckload of paper": "nodeZY"
+    },
+    "actions": {
+      "population": 20,
+      "greenresources": 2,
+      "redresources": -5,
+      "greenEconomy": -10,
+      "redEconomy": 0
+    }
+  },
+  "nodeY": {
+    "description": "Both countries now want pandemic recovery medals. What do you do?",
+    "choices": {
+      "Give medals to both countries": "nodeZZ",
+      "Award medals based on population health": "nodeZA"
+    },
+    "actions": {
+      "population": 15,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeYZ": {
+    "description": "Red country’s recovery team organizes a pandemic celebration parade, causing some new cases. How do you address this?",
+    "choices": {
+      "Postpone celebrations and promote safety": "nodeZB",
+      "Provide free masks at the parade": "nodeZC"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 0,
+      "redEconomy": -20
+    }
+  },
+  "nodeAA": {
+    "description": "Red country citizens complain about the test centers being too far. What’s your solution?",
+    "choices": {
+      "Open mobile test centers": "nodeZB",
+      "Offer free rides to test centers": "nodeZC"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 0,
+      "redEconomy": 10
+    }
+  },
+  "nodeBB": {
+    "description": "Green country scientists demand more funding for vaccine production. What’s your move?",
+    "choices": {
+      "Redirect research funds from red country": "nodeZD",
+      "Start a vaccine donation campaign": "nodeZE"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": -5,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": -10
+    }
+  },
+  "nodeCC": {
+    "description": "Red country citizens start wearing masks as a fashion statement. Supplies are running low. What do you do?",
+    "choices": {
+      "Import masks from green country": "nodeZF",
+      "Start a local mask production unit": "nodeZG"
+    },
+    "actions": {
+      "population": 20,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": -10,
+      "redEconomy": 20
+    }
+  },
+  "nodeDD": {
+    "description": "Green country is arguing over mask colors, and the debate is slowing recovery. How do you handle it?",
+    "choices": {
+      "Mandate rainbow-colored masks": "nodeZH",
+      "Let citizens vote for a national mask color": "nodeZI"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": 0,
+      "greenresources": 2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeEE": {
+    "description": "Red country medics complete their training but ask for raises. How do you respond?",
+    "choices": {
+      "Increase medic salaries": "nodeZF",
+      "Offer non-monetary incentives": "nodeZG"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 0,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeFF": {
+    "description": "Green country resources are diverted, causing protests. How do you calm the citizens?",
+    "choices": {
+      "Host a free concert": "nodeZG",
+      "Offer free food packages": "nodeZH"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": -10,
+      "redEconomy": 10
+    }
+  },
+  "nodeGG": {
+    "description": "Green country’s healthcare system is now world-class. Other countries request help. What’s your response?",
+    "choices": {
+      "Share knowledge freely": "nodeZI",
+      "Charge for consultations": "nodeZJ"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": 0,
+      "greenresources": 2,
+      "greenEconomy": -10,
+      "redEconomy": 20
+    }
+  },
+  "nodeHH": {
+    "description": "Red country is frustrated by the lack of resources. How do you address the issue?",
+    "choices": {
+      "Divert surplus from green country": "nodeZI",
+      "Launch an emergency aid program": "nodeZJ"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeII": {
+    "description": "Green country aid sparks rumors of favoritism in red country. How do you handle this?",
+    "choices": {
+      "Issue a public clarification": "nodeZK",
+      "Increase aid to red country": "nodeZL"
+    },
+    "actions": {
+      "population": 15,
+      "redresources": 2,
+      "greenresources": 0,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeJJ": {
+    "description": "Equal aid distribution causes delays in resource delivery. What’s your next step?",
+    "choices": {
+      "Speed up logistics with tech": "nodeZM",
+      "Focus resources on urgent needs": "nodeZN"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 20,
+      "redEconomy": 10
+    }
+  },
+  "nodeKK": {
+    "description": "Testing in red country is progressing, but they demand entertainment while waiting. What’s your response?",
+    "choices": {
+      "Install TVs at test centers": "nodeZL",
+      "Offer live music performances": "nodeZM"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 0,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeLL": {
+    "description": "Green country recovery accelerates, but red country complains about unequal attention. How do you address this?",
+    "choices": {
+      "Divert some resources to red country": "nodeZN",
+      "Explain the recovery strategy": "nodeZO"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": 0,
+      "redEconomy": 20
+    }
+  },
+  "nodeMM": {
+    "description": "Increased funding boosts green country recovery but sparks protests in red country. What’s your solution?",
+    "choices": {
+      "Rebalance funding": "nodeZP",
+      "Host town halls to explain decisions": "nodeZQ"
+    },
+    "actions": {
+      "population": 20,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeNN": {
+    "description": "Green country’s vaccine production soars, but red country accuses them of hoarding. What’s your move?",
+    "choices": {
+      "Share surplus vaccines": "nodeZR",
+      "Launch a PR campaign": "nodeZS"
+    },
+    "actions": {
+      "population": 15,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": 20,
+      "redEconomy": -10
+    }
+  },
+  "nodeTO": {
+    "description": "Hydroponic farming in the lab takes off, but the staff is now too busy growing vegetables to focus on vaccines. What’s next?",
+    "choices": {
+      "Encourage lab-grown salad sales": "nodeZP",
+      "Reassign staff back to vaccine duties": "nodeZQ"
+    },
+    "actions": {
+      "population": 10,
+      "greenresources": 2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeTP": {
+    "description": "Strict lab discipline boosts vaccine production but staff morale hits rock bottom. How do you fix it?",
+    "choices": {
+      "Introduce karaoke lunch breaks": "nodeZS",
+      "Offer free coffee machines": "nodeZT"
+    },
+    "actions": {
+      "population": 5,
+      "greenresources": -2,
+      "redresources": -2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeUQ": {
+    "description": "Ice cream production in the red country is booming, but now citizens demand exotic flavors. What’s your response?",
+    "choices": {
+      "Import mangoes from green country": "nodeZU",
+      "Experiment with local ingredients": "nodeZV"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -5,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 20
+    }
+  },
+  "nodeUR": {
+    "description": "Smoothies are a hit, but blender accidents in red country are on the rise. How do you address this?",
+    "choices": {
+      "Introduce safety tutorials": "nodeZX",
+      "Ban high-speed blending": "nodeZY"
+    },
+    "actions": {
+      "population": 20,
+      "greenresources": 2,
+      "redresources": -5,
+      "greenEconomy": -10,
+      "redEconomy": 0
+    }
+  },
+  "nodeVS": {
+    "description": "The science education campaign backfires as citizens now believe the earth is shaped like a vaccine. How do you respond?",
+    "choices": {
+      "Launch a space education program": "nodeZZ",
+      "Stick to pandemic recovery topics": "nodeZA"
+    },
+    "actions": {
+      "population": 15,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": 10
+    }
+  },
+  "nodeVT": {
+    "description": "Banning alien vaccine rumors calms the public but sparks underground conspiracy blogs. What’s your move?",
+    "choices": {
+      "Shut down the blogs": "nodeZB",
+      "Flood the internet with cat videos": "nodeZC"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": 2,
+      "greenresources": 2,
+      "greenEconomy": 0,
+      "redEconomy": -20
+    }
+  },
+  "nodeWU": {
+    "description": "Mango imports boost green country trade but exhaust red country’s ice cream demand. How do you balance this?",
+    "choices": {
+      "Shift focus to frozen yogurt": "nodeZB",
+      "Launch a 'No Mango Monday' policy": "nodeZL"
+    },
+    "actions": {
+      "population": 10,
+      "redresources": -2,
+      "greenresources": 2,
+      "greenEconomy": 0,
+      "redEconomy": 10
+    }
+  },
+  "nodeWV": {
+    "description": "Local ingredients create unique ice cream flavors, but green country complains about flavor theft. What’s your solution?",
+    "choices": {
+      "Patent the recipes": "nodeZD",
+      "Offer flavor exchange programs": "nodeZE"
+    },
+    "actions": {
+      "population": 5,
+      "redresources": -5,
+      "greenresources": 2,
+      "greenEconomy": 10,
+      "redEconomy": -10
+    }
+  },
+  "nodeWX": {
+    "description": "Digital vaccine certificates save paper but confuse the elderly population. How do you simplify things?",
+    "choices": {
+      "Launch a hotline for assistance": "nodeZF",
+      "Distribute printed manuals": "nodeZG"
+    },
+    "actions": {
+      "population": 20,
+      "redresources": 2,
+      "greenresources": -2,
+      "greenEconomy": -10,
+      "redEconomy": 20
+    }
+  }
+}
+
