@@ -70767,7 +70767,7 @@ this.uv()},
 uv(){var s=0,r=A.O(t.H),q=this
 var $async$uv=A.P(function(a,b){if(a===1)return A.L(b,r)
 for(;;)switch(s){case 0:s=2
-return A.E(q.as.nM("decision_tree.json"),$async$uv)
+return A.E(q.as.nM("assets/decision_tree.json"),$async$uv)
 case 2:q.at=!0
 return A.M(null,r)}})
 return A.N($async$uv,r)},

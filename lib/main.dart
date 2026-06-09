@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> initTree() async {
-    await currentTree.getTree('decision_tree.json');
+    await currentTree.getTree('assets/decision_tree.json');
     isTreeLoaded = true;
   }
 
