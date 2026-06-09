@@ -9,6 +9,7 @@ class DecisionTree {
 
   // retrieve decision tree
   Future<void> getTree(String path) async {
+    try {
     await fetchGameData();
     final box = Hive.box('gameData');
 
@@ -20,6 +21,11 @@ class DecisionTree {
       String jsonString = await rootBundle.loadString(path);
       tree = jsonDecode(jsonString);
       print("from assets");
+    }
+    } catch (e) {
+      print("falling back to assets: $e");
+      String jsonString = await rootBundle.loadString(path);
+      tree = jsonDecode(jsonString);
     }
   }
 
